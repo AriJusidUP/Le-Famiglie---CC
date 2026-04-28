@@ -6,6 +6,10 @@
     scroll-behavior: smooth;
 }
 
+body{
+        overflow-x: hidden;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -146,7 +150,7 @@ h2{
 }
 
 .historia p{
-    width: 50%;
+    width: 45%;
     margin: 3% 0 ;
 }
 
@@ -154,8 +158,9 @@ h2{
     display: flex;
     align-items: center;
     margin-top: 8%;
-    border-bottom: 2px solid black;
+    border-bottom: 3px solid #d3d3d3;
     padding-bottom: 1%;
+    margin-right: 5%;
 }
 
 .verMas a{
@@ -170,10 +175,12 @@ h2{
     display: flex;
     justify-content: end;
     width: 100%;
+    height: 420px;
+    position: relative;
 }
 
 .historia img{
-    width: 33%;
+    width: 37%;
     border-radius: 50%;
     position: relative;
     
@@ -183,3 +190,13 @@ h2{
     position: absolute;
 }
 
+.shadowImg{
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    left: 80%;
+    top: 50%;
+    transform: translateY(-70%);
+}
