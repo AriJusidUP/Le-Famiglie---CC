@@ -201,3 +201,195 @@ h2{
     top: 50%;
     transform: translateY(-70%);
 }
+
+@media (max-width: 768px) {
+    nav{
+        padding: 2% 3%;
+    }
+
+    .nav-logo{
+        font-size: 14px;
+    }
+
+    nav ul{
+        gap: 10px;
+    }
+
+    a{
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    .hero{
+        height: 60vh;
+    }
+
+    .hero img{
+        width: 40%;
+    }
+
+    .destacados{
+        padding: 5%;
+    }
+
+    h2{
+        font-size: 28px;
+    }
+
+    .section-content{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .desCard{
+        width: 48%;
+        height: 300px;
+        margin-bottom: 5%;
+    }
+
+    .historia{
+        flex-direction: column;
+    }
+
+    .historiaContainer{
+        width: 100%;
+        padding-right: 10%;
+    }
+
+    .historia p{
+        width: 100%;
+    }
+
+    .historiaImg{
+        width: 100%;
+        height: 300px;
+        justify-content: center;
+        margin-top: 50%;
+    }
+
+    .historia img{
+        width: 50%;
+    }
+
+    .shadowImg{
+        display: none;
+    }
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 393px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    nav{
+        padding: 3% 4%;
+        flex-wrap: wrap;
+    }
+
+    .nav-logo{
+        font-size: 12px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    nav ul{
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    nav ul li{
+        display: none;
+    }
+
+    nav ul li:first-child{
+        display: block;
+    }
+
+    .material-symbols-outlined{
+        display: block;
+    }
+
+    a{
+        margin: 0 5px;
+        font-size: 12px;
+    }
+
+    .hero{
+        height: 50vh;
+    }
+
+    .hero img{
+        width: 50%;
+    }
+
+    .destacados{
+        padding: 4%;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    .section-head{
+        margin-bottom: 6%;
+    }
+
+    .section-content{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .desCard{
+        width: 100%;
+        height: 280px;
+    }
+
+    .desCard-info{
+        padding: 6%;
+        font-size: 12px;
+    }
+
+    .desCard-head h3{
+        font-size: 14px;
+    }
+
+    .historia{
+        flex-direction: column;
+        padding: 4%;
+    }
+
+    .historiaContainer{
+        width: 100%;
+    }
+
+    .historia p{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .verMas{
+        margin-right: 0;
+    }
+
+    .verMas a{
+        font-size: 12px;
+    }
+
+    .historiaImg{
+        width: 100%;
+        height: 250px;
+        justify-content: center;
+    }
+
+    .historia img{
+        width: 60%;
+    }
+
+    .shadowImg{
+        width: 55%;
+        height: 80%;
+    }
+}
