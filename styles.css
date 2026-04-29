@@ -295,17 +295,16 @@ h2{
 
     nav ul{
         width: 100%;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 5px;
+
     }
 
-    nav ul li{
+    nav ul li:nth-child(4)
+    {
         display: none;
     }
 
     nav ul li:first-child{
-        display: block;
+        display: none;
     }
 
     .material-symbols-outlined{
@@ -380,17 +379,18 @@ h2{
 
     .historiaImg{
         width: 100%;
-        height: 250px;
         justify-content: center;
-        margin-top: 50%;
+        margin-top: 75%;
     }
 
     .historia img{
-        width: 60%;
+        width: 70%;
+        height: 85%;
     }
 
     .shadowImg{
         width: 55%;
         height: 80%;
+        display: none;
     }
 }
