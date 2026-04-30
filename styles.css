@@ -216,12 +216,18 @@ h2{
 .contRecetas{
     display: flex;
     flex-direction: column;
+    justify-content: end;
     text-align: right;
     width: 100%;
-    padding: 0 7% ;
-    margin-bottom: 5%;
+    padding-right: 7% ;
+    margin-bottom: 38px;
+    position: relative;
+
 }
 
+.contRecetas p{
+    padding-left: 50%;
+}
 .section-head-right{
         margin-bottom: 4%;
 }
@@ -231,10 +237,11 @@ h2{
     justify-content: end;
     margin-top: 8%;
     border-bottom: 3px solid #d3d3d3;
-    padding-bottom: 1%;
-    margin-left: 15%;
+
     font-weight: 600;
     color: #0000006b;
+    width: 100%;
+    position: relative;
 
     a{
         font-size: 14px;
@@ -245,7 +252,9 @@ h2{
 }
 
 .recetasImg{
-    width: 850px;
+    width: 550px;
+    position: absolute;
+    z-index: 1000;
 }
 
 @media (max-width: 768px) {
