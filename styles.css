@@ -186,7 +186,7 @@ h2{
 }
 
 .historia img{
-    width: 37%;
+    width: 420px;
     border-radius: 50%;
     position: relative;
     
@@ -198,8 +198,8 @@ h2{
 
 .shadowImg{
     position: absolute;
-    width: 35%;
-    height: 100%;
+    width: 420px;
+    height: 420px;
     background-color: #d3d3d3;
     border-radius: 50%;
     left: 80%;
@@ -245,8 +245,7 @@ h2{
 }
 
 .recetasImg{
-    width: 65%;
-    object-fit: cover;
+    width: 850px;
 }
 
 @media (max-width: 768px) {
@@ -442,5 +441,26 @@ h2{
         width: 55%;
         height: 80%;
         display: none;
+    }
+
+    .recetas{
+        flex-direction: column-reverse;
+    }
+
+    .recetasImg{
+        width: 100%;
+    }
+
+    .contRecetas{
+        width: 100%;
+
+        p, a{
+            font-size: 14px;
+        }
+        
+    }
+    
+    .verMasR{
+        margin-left: 0;
     }
 }
