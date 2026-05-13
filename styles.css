@@ -9,6 +9,7 @@
 
 body{
         overflow-x: hidden;
+        background-color: #FFFCF4;
 }
 
 nav{
@@ -16,6 +17,11 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 1% 2%;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.878);
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .nav-logo{
@@ -64,22 +70,25 @@ a{
 
 .hero img{
     width:30%;
+    margin-top: 3%;
 }
 
 /*DESTACADOS*/
 .destacados{
-    padding: 7%;
+    padding: 7% 0;
+    
 }
 
 .section-content{
     display: flex;
-    justify-content: baseline;
+    justify-content: center;
 }
 .section-head{
     display: flex;
     align-items: center;
     width: 100%;
     margin-bottom: 4%;
+    padding-left: 7%;
 }
 
 h2{
@@ -90,58 +99,64 @@ h2{
 }
 
 .section-content{
+    padding-left: 7%;
+    padding-right: 7%;
     display: flex;
     justify-content: space-between;
+
 }
 
 .desCard{
     width: 23%;
     height: 350px;
-    border-radius: 10px;
-    box-shadow:  0 2px 5px rgba(0,0,0,0.5);
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-self: center;
+    padding: 1%;
 }
-
-.desCard-head{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 6%;
-}
-
 
 .desCard-info{
-    background-color: white;
     padding: 5%;
     font-size: 14px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    text-align: center;
+
+}
+
+.desCard img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 25px;
+    background-size: cover;
+}
+
+.desCard-info h3{
+    font-family: "Roboto Slab", serif;
+
 }
 
 .desCard-info p{
     line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
 }
 
-.desCard:nth-child(1){
-    background-image: url("https://acdn-us.mitiendanube.com/stores/001/215/401/products/merluza-romana-11-0bf8c635deedc0b95c16896169511819-1024-1024.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
+.desCard-info a{
+    background-color: black;
+    color: white;
+    padding: 6px 40px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 12px;
+
 }
-.desCard:nth-child(2){
-    background-image: url("https://acdn-us.mitiendanube.com/stores/001/215/401/products/merluza-romana-11-0bf8c635deedc0b95c16896169511819-1024-1024.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.desCard:nth-child(3){
-    background-image: url("https://acdn-us.mitiendanube.com/stores/001/215/401/products/merluza-romana-11-0bf8c635deedc0b95c16896169511819-1024-1024.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.desCard:nth-child(4){
-    background-image: url("https://acdn-us.mitiendanube.com/stores/001/215/401/products/merluza-romana-11-0bf8c635deedc0b95c16896169511819-1024-1024.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
+
+
+@media (max-width: 1380px) {
+    .desCard:nth-child(5){
+    display: none;
+    }
 }
 
 /*NUESTRA HISTORIA*/
@@ -159,12 +174,17 @@ h2{
     display: flex;
     align-items: center;
     margin-top: 8%;
-    border-bottom: 3px solid #d3d3d3;
+    border-bottom: 3px solid #EDE4C1;
     padding-bottom: 1%;
     margin-right: 15%;
     font-weight: 600;
     color: #0000006b;
 
+    span{
+        color: #EDE4C1;
+        font-weight: 500;
+
+    }
 }
 
 .verMas a{
@@ -200,7 +220,7 @@ h2{
     position: absolute;
     width: 420px;
     height: 420px;
-    background-color: #d3d3d3;
+    background-color: #EDE4C1;
     border-radius: 50%;
     left: 80%;
     top: 50%;
@@ -236,7 +256,7 @@ h2{
     align-items: center;
     justify-content: end;
     margin-top: 8%;
-    border-bottom: 3px solid #d3d3d3;
+    border-bottom: 3px solid #EDE4C1;
 
     font-weight: 600;
     color: #0000006b;
@@ -247,6 +267,12 @@ h2{
         font-size: 14px;
         margin: 0;
         color: #0000006b;
+
+    }
+
+    span{
+        color: #EDE4C1;
+        font-weight: 500;
 
     }
 }
@@ -472,4 +498,63 @@ h2{
     .verMasR{
         margin-left: 0;
     }
+}
+
+/*RESERVAS*/
+
+form{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    width: 80%;
+}
+
+.form-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.second-inputs{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+input, select{
+    border-radius: 10px;
+    padding: 2%;
+    margin: 1%;
+    border: 1px solid #EDE4C1;
+}
+
+input[type="number"]{
+    width: 64%;
+}
+
+.btn{
+    color: white;
+    background-color: #2C2C2C;
+    border: none;
+        padding: 3%;
+}
+
+
+.note{
+    border: 1px solid #EDE4C1;
+    background-color: #fff;
+    width: 35%;
+    border-radius: 10px;
+    padding: 3%;
+
+}
+
+.note p{
+        margin-bottom: 20px;
+
+}
+
+.note label{
+    padding-top: 80px;
 }
