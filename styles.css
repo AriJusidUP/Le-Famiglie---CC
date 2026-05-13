@@ -22,6 +22,11 @@ nav{
     top: 0;
     width: 100%;
     z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    background-color: rgba(255, 255, 255, 0.842);
 }
 
 .nav-logo{
@@ -57,6 +62,7 @@ a{
     align-items: center;
     z-index:1;
     position: relative;
+    margin-top: 3%;
 }
 
 .hero::before{
@@ -114,6 +120,15 @@ h2{
     justify-self: center;
     padding: 1%;
 }
+
+
+.desCard-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
 
 .desCard-info{
     padding: 5%;
@@ -240,7 +255,7 @@ h2{
     text-align: right;
     width: 100%;
     padding-right: 7% ;
-    margin-bottom: 38px;
+    margin-bottom: 18px;
     position: relative;
 
 }
@@ -282,6 +297,65 @@ h2{
     position: absolute;
     z-index: 1000;
 }
+
+
+form{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    width: 80%;
+}
+
+.form-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.second-inputs{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+input, select{
+    border-radius: 10px;
+    padding: 2%;
+    margin: 1%;
+    border: 1px solid #EDE4C1;
+}
+
+input[type="number"]{
+    width: 64%;
+}
+
+.btn{
+    color: white;
+    background-color: #2C2C2C;
+    border: none;
+        padding: 3%;
+}
+
+
+.note{
+    border: 1px solid #EDE4C1;
+    background-color: #fff;
+    width: 35%;
+    border-radius: 10px;
+    padding: 3%;
+
+}
+
+.note p{
+        margin-bottom: 20px;
+
+}
+
+.note label{
+    padding-top: 80px;
+}
+
 
 @media (max-width: 768px) {
     nav{
