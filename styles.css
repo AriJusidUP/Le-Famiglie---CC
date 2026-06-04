@@ -303,13 +303,17 @@ input[type="number"]{
     width: 64%;
 }
 
-.btn{
+.but{
     color: white;
     background-color: #2C2C2C;
     border: none;
         padding: 3%;
 }
 
+
+.but:hover{
+    background-color: #2c2c2cda;
+}
 
 .note{
     border: 1px solid #EDE4C1;
@@ -328,8 +332,9 @@ input[type="number"]{
 }
 
 .note label{
-    padding-top: 80px;
+    padding: 0px;
     font-size: 14px;
+    width: 100%;
 
 }
 
