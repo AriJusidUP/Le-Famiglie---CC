@@ -12,7 +12,16 @@ body{
         background-color: #FFFCF4 !important;
 }
 
-nav{ display: flex; justify-content: space-between; align-items: center; padding: 1% 2%; position: fixed; background-color: rgba(255, 255, 255, 0.878); top: 0; width: 100%; z-index: 1000; top: 0; left: 0; width: 100%; z-index: 1000; background-color: rgba(255, 255, 255, 0.842); } .nav-logo{ font-size: 16px; color: black; text-decoration: none; font-family: "Roboto Slab", serif; } nav ul{ display: flex; list-style: none; align-items: center; } a{ text-decoration: none; color: black; margin: 0 15px; font-size: 16px; }
+nav{ display: flex; justify-content: space-between; align-items: center; padding: 1% 2%; position: fixed; background-color: rgba(255, 255, 255, 0.878); top: 0; width: 100%; z-index: 1000; top: 0; left: 0; width: 100%; z-index: 1000; background-color: rgba(255, 255, 255, 0.842); } 
+
+.nav-logo{ font-size: 16px; color: black; text-decoration: none; font-family: "Roboto Slab", serif; } nav ul{ display: flex; list-style: none; align-items: center; } 
+
+a{ text-decoration: none; color: black; margin: 0 15px; font-size: 16px; }
+
+.navBoo{
+    align-items: center;
+    a{ text-decoration: none; color: black; margin: 0 15px; font-size: 16px; }
+}
 /*HERO*/
 
 .hero{
@@ -25,7 +34,7 @@ nav{ display: flex; justify-content: space-between; align-items: center; padding
     align-items: center;
     z-index:1;
     position: relative;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .hero::before{
@@ -620,9 +629,27 @@ input[type="number"]{
 .banner{
     margin-top: 7%;
     padding: 3%;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl87Ond3BiTEXuR1LBkLFrQCPVk5oRPgdv_wazQngr3_mQ2Nbq');
+    background-image: url('https://images.pexels.com/photos/34487028/pexels-photo-34487028.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner::before{
+    content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.26),
+    rgba(0,0,0,0.7)
+  );
+}
+
+.banner *{
+    position: relative;
+    z-index: 2;
 }
 
 .cat{
@@ -642,13 +669,13 @@ input[type="number"]{
     padding:  0;
 }
 .carta{
-    padding-top: 10%;
+    padding-top: 8%;
     padding-bottom:3%;
 }
 
 .menuCard{
     width: 195px !important;
-    border: 1px solid #EDE4C1
+    border: 1px solid #EDE4C1;
 }
 
 .menuCard img{
@@ -664,4 +691,22 @@ input[type="number"]{
 
 .menuCard h6{
     margin:0;
+}
+
+.guar{
+    background-color: white;
+    border: 1px solid #EDE4C1;
+    overflow: hidden; 
+    position: relative;
+}
+.guar p{
+    font-size: 12px;
+    width: 100%;
+}
+
+.guar img{
+    width: 75%;
+    position: absolute;
+    right: -80px; /* la empuja afuera */
+    bottom: -90px;
 }
