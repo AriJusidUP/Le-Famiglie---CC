@@ -80,12 +80,10 @@ h2{
     padding-left: 7%;
     padding-right: 7%;
     display: flex;
-    justify-content: space-between;
 
 }
 
 .desCard{
-    width: 23%;
     height: 350px;
     display: flex;
     flex-direction: column;
