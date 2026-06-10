@@ -1,26 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Famiglie</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet"></head>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
 <body>
-    <nav>
-        <a class="nav-logo" href="index.html">LE FAMIGLIE</a>
-        <ul>
-            <li><a href="#nos">Sobre nosotros</a></li>
-            <li><a href="menu.html">Menú</a></li>
-            <li><a href="reservas.html">Reservas</a></li>
-            <li><a href="recetas.html">Recetas</a></li>
-            <span class="material-symbols-outlined"> menu</span>        </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid justify-content-between">
+            <a class="navbar-brand nav-logo" href="index.html">LE FAMIGLIE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Conócenos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <h6 class="ms-4 pt-2">Ubicación</h6>
+                            </li>
+                            <li class="ms-4">
+                                <div class="mapouter">
+                                    <div class="gmap_canvas">
+                                        <iframe width="200px" height="80px" style="border:0;" allowfullscreen=""
+                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                            src="https://www.google.com/maps/embed/v1/place?q=Salta%20440&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            <li><a class="dropdown-header">Salta 440</a></li>
+                            <li>
+                                <h6 class="ms-4 pt-3">Contacto</h6>
+                            </li>
+                            <li><a class="dropdown-header">lefamiglie@gmail.com</a></li>
+                            <li><a class="dropdown-header">@lefamiglie_ok</a></li>
+                            <li><a class="dropdown-header">+54 11 3536 9876</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#nos">Sobre nosotros</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservas.html">Reservas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menú</a>
+                    </li>
+                    
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="recetas.html">Recetas</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
     </nav>
+
     <section class="hero">
         <img src="img/logoWhite.png" alt="logoWhite">
     </section>
@@ -34,88 +91,95 @@
 
                 <div class="col-12 col-sm-6 col-md-4 col-xxl-2">
                     <div class="desCard h-100">
-                        <img src="https://acdn-us.mitiendanube.com/stores/001/215/401/products/merluza-romana-11-0bf8c635deedc0b95c16896169511819-1024-1024.webp" alt="plato" class="img-fluid">
+                        <img src="https://acdn-us.mitiendanube.com/stores/001/215/401/products/merluza-romana-11-0bf8c635deedc0b95c16896169511819-1024-1024.webp"
+                            alt="plato" class="img-fluid">
                         <div class="desCard-info">
                             <h3>Filet de merluza</h3>
                             <p>Lorem ipsum dolor sit, consectetur adipisicing elitluptserrrate.</p>
-                            <a href="menu.html" class="text-white">Ver receta</a>
+                            <a href="menu.html" class="text-white">Ver menú</a>
                         </div>
                     </div>
                 </div>
-            
+
                 <div class="col-12 col-sm-6 col-md-4 col-xxl-2">
                     <div class="desCard h-100">
-                        <img src="https://content-cocina.lecturas.com/medio/2026/05/07/chipirones-con-cebolla_00000000_260507161638_360x360.webp" alt="plato" class="img-fluid">
+                        <img src="https://content-cocina.lecturas.com/medio/2026/05/07/chipirones-con-cebolla_00000000_260507161638_360x360.webp"
+                            alt="plato" class="img-fluid">
                         <div class="desCard-info">
                             <h3>Chipirones con cebolla</h3>
                             <p>Lorem ipsum dolor sit, consectetur adipisicing elitluptserrrate.</p>
-                            <a href="menu.html" class="text-white">Ver receta</a>
+                            <a href="menu.html" class="text-white">Ver menú</a>
                         </div>
                     </div>
                 </div>
-            
+
                 <div class="col-12 col-sm-6 col-md-4 col-xxl-2">
                     <div class="desCard h-100">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiUfF3xgrmVVFNbax4SZvP2ycQnLxLKd7FqA&s" alt="plato" class="img-fluid">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiUfF3xgrmVVFNbax4SZvP2ycQnLxLKd7FqA&s"
+                            alt="plato" class="img-fluid">
                         <div class="desCard-info">
                             <h3>Calamares a la plancha</h3>
                             <p>Lorem ipsum dolor sit, consectetur adipisicing elitluptserrrate.</p>
-                            <a href="menu.html" class="text-white">Ver receta</a>
+                            <a href="menu.html" class="text-white">Ver menú</a>
                         </div>
                     </div>
                 </div>
-            
+
                 <div class="col-12 col-sm-6 col-md-4 col-xxl-2">
                     <div class="desCard h-100">
-                        <img src="https://acdn-us.mitiendanube.com/stores/001/215/401/products/merluza-romana-11-0bf8c635deedc0b95c16896169511819-1024-1024.webp" alt="plato" class="img-fluid">
+                        <img src="https://acdn-us.mitiendanube.com/stores/001/215/401/products/merluza-romana-11-0bf8c635deedc0b95c16896169511819-1024-1024.webp"
+                            alt="plato" class="img-fluid">
                         <div class="desCard-info">
                             <h3>Filet de merluza</h3>
                             <p>Lorem ipsum dolor sit, consectetur adipisicing elitluptserrrate.</p>
-                            <a href="menu.html" class="text-white">Ver receta</a>
+                            <a href="menu.html" class="text-white">Ver menú</a>
                         </div>
                     </div>
                 </div>
-            
+
                 <div class="col-12 col-sm-6 col-md-4 col-xxl-2">
                     <div class="desCard h-100">
-                        <img src="https://content-cocina.lecturas.com/medio/2026/05/11/pappardelle-a-la-amatriciana_00000000_260511114920_360x360.webp" alt="plato" class="img-fluid">
+                        <img src="https://content-cocina.lecturas.com/medio/2026/05/11/pappardelle-a-la-amatriciana_00000000_260511114920_360x360.webp"
+                            alt="plato" class="img-fluid">
                         <div class="desCard-info">
                             <h3>Pappardelle amatriciana</h3>
                             <p>Lorem ipsum dolor sit, consectetur adipisicing elitluptserrrate.</p>
-                            <a href="menu.html" class="text-white">Ver receta</a>
+                            <a href="menu.html" class="text-white">Ver menú</a>
                         </div>
                     </div>
                 </div>
-            
+
                 <div class="col-12 col-sm-6 col-md-4 col-xxl-2">
                     <div class="desCard h-100">
-                        <img src="https://content-cocina.lecturas.com/medio/2026/04/23/espiral-de-filo-con-pollo-y-queso-feta_00000000_260506163010_900x900.webp" alt="plato" class="img-fluid">
+                        <img src="https://content-cocina.lecturas.com/medio/2026/04/23/espiral-de-filo-con-pollo-y-queso-feta_00000000_260506163010_900x900.webp"
+                            alt="plato" class="img-fluid">
                         <div class="desCard-info">
                             <h3>Espiral de filo</h3>
                             <p>Lorem ipsum dolor sit, consectetur adipisicing elitluptserrrate.</p>
-                            <a href="menu.html" class="text-white">Ver receta</a>
+                            <a href="menu.html" class="text-white">Ver menú</a>
                         </div>
                     </div>
                 </div>
-            
+
             </div>
-            </div>
+        </div>
     </section>
     <section class="historia" id="nos">
         <div class="historiaContainer">
             <h2>Nuestra historia</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cum eius sunt non nostrum obcaecati. Error, delectus fugiat nesciunt autem iste ab veritatis, asperiores assumenda ullam officiis, eum rerum esse. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis id, beatae consequuntur nobis unde nam illo odio, dolor corporis aspernatur quas ea perferendis assumenda consequatur eos incidunt reiciendis minima exercitationem!</p>
-            <div class="verMas">
-                <a href="">VER MÁS</a>
-                <span class="material-symbols-outlined" >arrow_forward_ios</span>
-
-            </div>  
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cum eius sunt non nostrum obcaecati. Error,
+                delectus fugiat nesciunt autem iste ab veritatis, asperiores assumenda ullam officiis, eum rerum esse.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis id, beatae consequuntur nobis unde nam
+                illo odio, dolor corporis aspernatur quas ea perferendis assumenda consequatur eos incidunt reiciendis
+                minima exercitationem!</p>
+    
         </div>
         <div class="historiaImg">
             <div class="shadowImg"></div>
-            <img src="https://www.escapadarural.com/blog/wp-content/uploads/2023/10/21_PueblosMedievales_Siguenza_dudlajzov_AdobeStock_586011157_WP11.webp" alt="familia">
+            <img src="https://www.escapadarural.com/blog/wp-content/uploads/2023/10/21_PueblosMedievales_Siguenza_dudlajzov_AdobeStock_586011157_WP11.webp"
+                alt="familia">
         </div>
-          
+
     </section>
     <section class="recetas">
         <img src="img/cuaderno.png" alt="Recetas" class="recetasImg">
@@ -123,16 +187,79 @@
             <div class="section-head-right">
                 <h2>Recetas de la casa</h2>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, consectetur velit mollitia saepe dignissimos at, ab voluptatum facilis quas minus in architecto officia dicta quibusdam ullam voluptates ducimus ea laborum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis placeat error quae incidunt? Asperiores odit, cupiditate velit qui ipsam eos laudantium praesentium nisi beatae commodi fugiat sed dolor delectus reprehenderit?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, consectetur velit mollitia saepe
+                dignissimos at, ab voluptatum facilis quas minus in architecto officia dicta quibusdam ullam voluptates
+                ducimus ea laborum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis placeat error
+                quae incidunt? Asperiores odit, cupiditate velit qui ipsam eos laudantium praesentium nisi beatae
+                commodi fugiat sed dolor delectus reprehenderit?</p>
             <div class="verMasR">
                 <span class="material-symbols-outlined" style="rotate: 180deg;">arrow_forward_ios</span>
-                <a href="">VER MÁS</a>
+                <a href="recetas.html">VER MÁS</a>
             </div>
         </div>
     </section>
-    <footer style="height: 200px; background-color: #212121;">
+    <footer class="bg-dark text-white py-5">
+        <div class="container-fluid px-5">
+
+            <!-- Parte superior -->
+            <div class="row">
+
+                <!-- Información -->
+                <div class="col-lg-8">
+                    <h2>LE FAMIGLIE</h2>
+
+                    <p class="mb-2">Salta 440</p>
+
+                    <p class="w-50">
+                        It is a long established fact that a reader will be distracted by
+                        the readable content of a page when looking at its layout.
+                    </p>
+
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#"><i class="bi bi-facebook text-white"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-white"></i></a>
+                        <a href="#"><i class="bi bi-tiktok text-white"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contacto -->
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <h5>Contacto</h5>
+
+                    <p class="mb-2">lefamiglie@gmail.com</p>
+                    <p class="mb-2">+54 11 3536 9876</p>
+                    <p>www.lefamiglie.com</p>
+                </div>
+
+            </div>
+
+            <!-- Línea -->
+            <div class="row mt-4">
+                <div class="col">
+                    <hr>
+                </div>
+            </div>
+
+            <!-- Parte inferior -->
+            <div class="row align-items-center">
+
+                <div class="col-md-6 text-center text-md-start">
+                    <p>Copyright © 2026 <strong class="text-white">Le Famiglie</strong> - Todos los derechos reservados
+                    </p>
+                </div>
+
+                <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                    <p>Términos & Condiciones | Política de privacidad</p>
+                </div>
+
+            </div>
+
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

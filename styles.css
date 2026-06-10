@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,24 +7,59 @@
 }
 
 
-body{
-        overflow-x: hidden;
-        background-color: #FFFCF4 !important;
+body {
+    overflow-x: hidden;
+    background-color: #FFFCF4 !important;
 }
 
-nav{ display: flex; justify-content: space-between; align-items: center; padding: 1% 2%; position: fixed; background-color: rgba(255, 255, 255, 0.878); top: 0; width: 100%; z-index: 1000; top: 0; left: 0; width: 100%; z-index: 1000; background-color: rgba(255, 255, 255, 0.842); } 
-
-.nav-logo{ font-size: 16px; color: black; text-decoration: none; font-family: "Roboto Slab", serif; } nav ul{ display: flex; list-style: none; align-items: center; } 
-
-a{ text-decoration: none; color: black; margin: 0 15px; font-size: 16px; }
-
-.navBoo{
+nav {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    a{ text-decoration: none; color: black; margin: 0 15px; font-size: 16px; }
+    padding: 1% 2%;
+    position: fixed !important;
+    background-color: rgba(255, 255, 255, 0.878) !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999 !important;
 }
+
+.nav-logo {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    font-family: "Roboto Slab", serif;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.navBoo {
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: black;
+        margin: 0 15px;
+        font-size: 16px;
+    }
+}
+
 /*HERO*/
 
-.hero{
+.hero {
     background-image: url(https://www.pagina12.com.ar/resizer/v2/JH345DSOU5HZTFO4SBKETSCFTI.jpg?quality=75&auth=beb9df7577478a310d022bc255f0e8b91947cfbc6380f897b2ce31cba0087130&width=980);
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,36 +67,37 @@ a{ text-decoration: none; color: black; margin: 0 15px; font-size: 16px; }
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index:1;
+    z-index: 1;
     position: relative;
     margin-top: 60px;
 }
 
-.hero::before{
+.hero::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    z-index:-1;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
-.hero img{
-    width:30%;
+.hero img {
+    width: 30%;
     margin-top: 3%;
 }
 
 /*DESTACADOS*/
-.destacados{
+.destacados {
     padding: 7% 0;
-    
+
 }
 
-.section-content{
+.section-content {
     display: flex;
     justify-content: center;
 }
-.section-head{
+
+.section-head {
     display: flex;
     align-items: center;
     width: 100%;
@@ -69,30 +105,32 @@ a{ text-decoration: none; color: black; margin: 0 15px; font-size: 16px; }
     padding-left: 7%;
 }
 
-h2{
+h2 {
     font-size: 36px;
     font-family: "Roboto Slab";
     margin-right: 5px;
     font-weight: 450;
 }
 
-.section-content{
+.section-content {
     padding-left: 7%;
     padding-right: 7%;
     display: flex;
 
 }
 
-.desCard{
+.desCard {
     height: 350px;
     display: flex;
     flex-direction: column;
     justify-self: center;
     padding: 1%;
+    width: 100%;
+    max-width: none;
 }
 
 
-.desCard-head{
+.desCard-head {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -100,14 +138,14 @@ h2{
 }
 
 
-.desCard-info{
+.desCard-info {
     padding: 5%;
     font-size: 14px;
     text-align: center;
 
 }
 
-.desCard img{
+.desCard img {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -115,19 +153,19 @@ h2{
     background-size: cover;
 }
 
-.desCard-info h3{
+.desCard-info h3 {
     font-family: "Roboto Slab", serif;
 
 }
 
-.desCard-info p{
+.desCard-info p {
     line-height: 1.5;
     margin-top: 10px;
     margin-bottom: 20px;
 
 }
 
-.desCard-info a{
+.desCard-info a {
     background-color: black;
     color: white;
     padding: 6px 40px;
@@ -138,24 +176,19 @@ h2{
 }
 
 
-@media (max-width: 1380px) {
-    .desCard:nth-child(5){
-    display: none;
-    }
-}
 
 /*NUESTRA HISTORIA*/
-.historia{
+.historia {
     padding: 7%;
     display: flex;
 }
 
-.historia p{
+.historia p {
     width: 45%;
-    margin: 3% 0 ;
+    margin: 3% 0;
 }
 
-.verMas{
+.verMas {
     display: flex;
     align-items: center;
     margin-top: 8%;
@@ -165,24 +198,24 @@ h2{
     font-weight: 600;
     color: #0000006b;
 
-    span{
+    span {
         color: #EDE4C1;
         font-weight: 500;
 
     }
 }
 
-.verMas a{
+.verMas a {
     font-size: 14px;
     color: #0000006b;
 
 }
 
-.historia a{
+.historia a {
     margin: 0px;
 }
 
-.historiaImg{
+.historiaImg {
     display: flex;
     justify-content: end;
     width: 100%;
@@ -190,18 +223,18 @@ h2{
     position: relative;
 }
 
-.historia img{
+.historia img {
     width: 420px;
     border-radius: 50%;
     position: relative;
-    
+
 }
 
-.historiaContainer{
+.historiaContainer {
     position: absolute;
 }
 
-.shadowImg{
+.shadowImg {
     position: absolute;
     width: 420px;
     height: 420px;
@@ -214,29 +247,32 @@ h2{
 
 /*RECETAS*/
 
-.recetas{
+.recetas {
     display: flex;
     width: 100%;
 }
-.contRecetas{
+
+.contRecetas {
     display: flex;
     flex-direction: column;
     justify-content: end;
     text-align: right;
     width: 100%;
-    padding-right: 7% ;
+    padding-right: 7%;
     margin-bottom: 18px;
     position: relative;
 
 }
 
-.contRecetas p{
+.contRecetas p {
     padding-left: 50%;
 }
-.section-head-right{
-        margin-bottom: 4%;
+
+.section-head-right {
+    margin-bottom: 4%;
 }
-.verMasR{
+
+.verMasR {
     display: flex;
     align-items: center;
     justify-content: end;
@@ -248,35 +284,35 @@ h2{
     width: 100%;
     position: relative;
 
-    a{
+    a {
         font-size: 14px;
         margin: 0;
         color: #0000006b;
 
     }
 
-    span{
+    span {
         color: #EDE4C1;
         font-weight: 500;
 
     }
 }
 
-.recetasImg{
+.recetasImg {
     width: 550px;
     position: absolute;
     z-index: 1000;
 }
 
 
-form{
+form {
     display: flex;
     justify-content: center;
     width: 80%;
     padding-top: 2%;
 }
 
-.form-column{
+.form-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -284,36 +320,37 @@ form{
     margin-right: 1%;
 }
 
-.second-inputs{
+.second-inputs {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-input, select{
+input,
+select {
     border-radius: 10px;
     padding: 2%;
     margin: 1%;
     border: 1px solid #EDE4C1;
 }
 
-input[type="number"]{
+input[type="number"] {
     width: 64%;
 }
 
-.but{
+.but {
     color: white;
     background-color: #2C2C2C;
     border: none;
-        padding: 3%;
+    padding: 3%;
 }
 
 
-.but:hover{
+.but:hover {
     background-color: #2c2c2cda;
 }
 
-.note{
+.note {
     border: 1px solid #EDE4C1;
     background-color: #fff;
     width: 35%;
@@ -323,13 +360,13 @@ input[type="number"]{
     margin-top: 1%;
 }
 
-.note p{
-        margin-bottom: 20px;
-        font-size: 14px;
-        height: 80%;
+.note p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    height: 80%;
 }
 
-.note label{
+.note label {
     padding: 0px;
     font-size: 14px;
     width: 100%;
@@ -338,86 +375,86 @@ input[type="number"]{
 
 
 @media (max-width: 768px) {
-    nav{
+    nav {
         padding: 2% 3%;
     }
 
-    .nav-logo{
+    .nav-logo {
         font-size: 14px;
     }
 
-    nav ul{
+    nav ul {
         gap: 10px;
     }
 
-    a{
+    a {
         margin: 0 10px;
         font-size: 14px;
     }
 
-    .hero{
+    .hero {
         height: 60vh;
     }
 
-    .hero img{
+    .hero img {
         width: 40%;
     }
 
-    .destacados{
+    .destacados {
         padding: 5%;
     }
 
-    h2{
+    h2 {
         font-size: 28px;
     }
 
-    .section-content{
+    .section-content {
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
-    .desCard{
+    .desCard {
         width: 48%;
         height: 300px;
         margin-bottom: 5%;
     }
 
-    .historia{
+    .historia {
         flex-direction: column;
     }
 
-    .historiaContainer{
+    .historiaContainer {
         width: 100%;
         padding-right: 10%;
     }
 
-    .historia p{
+    .historia p {
         width: 100%;
     }
 
-    .historiaImg{
+    .historiaImg {
         width: 100%;
         height: 300px;
         justify-content: center;
         margin-top: 50%;
     }
 
-    .historia img{
+    .historia img {
         width: 50%;
     }
 
-    .shadowImg{
+    .shadowImg {
         display: none;
     }
 }
 
 /* RESPONSIVE MOBILE */
 @media (max-width: 393px) {
-    body{
+    body {
         overflow-x: hidden;
     }
 
-    nav{
+    nav {
         padding-top: 3%;
         padding-bottom: 3%;
         padding-left: 4%;
@@ -425,176 +462,177 @@ input[type="number"]{
         display: flex;
     }
 
-    .nav-logo{
+    .nav-logo {
         font-size: 12px;
         width: 100%;
         margin-bottom: 10px;
     }
 
-    nav ul{
+    nav ul {
         width: 100%;
 
     }
 
-    nav ul li:nth-child(4)
-    {
+    nav ul li:nth-child(4) {
         display: none;
     }
 
-    nav ul li:first-child{
+    nav ul li:first-child {
         display: none;
     }
 
-    .material-symbols-outlined{
+    .material-symbols-outlined {
         display: block;
     }
 
-    a{
+    a {
         margin: 0 5px;
         font-size: 12px;
     }
 
-    .hero{
+    .hero {
         height: 80vh;
     }
 
-    .hero img{
+    .hero img {
         width: 70%;
     }
 
-    .destacados{
+    .destacados {
         padding: 4%;
     }
 
-    h2{
+    h2 {
         font-size: 22px;
     }
 
-    .section-head{
+    .section-head {
         margin-bottom: 6%;
     }
 
-    .section-content{
+    .section-content {
         flex-direction: column;
         gap: 20px;
     }
 
-    .desCard{
+    .desCard {
         width: 100%;
         height: 280px;
     }
 
-    .desCard-info{
+    .desCard-info {
         padding: 6%;
         font-size: 12px;
     }
 
-    .desCard-head h3{
+    .desCard-head h3 {
         font-size: 14px;
     }
 
-    .historia{
+    .historia {
         flex-direction: column;
         padding: 4%;
     }
 
-    .historiaContainer{
+    .historiaContainer {
         width: 100%;
     }
 
-    .historia p{
+    .historia p {
         width: 100%;
         font-size: 14px;
     }
 
-    .verMas{
+    .verMas {
         margin-right: 0;
     }
 
-    .verMas a{
+    .verMas a {
         font-size: 12px;
     }
 
-    .historiaImg{
+    .historiaImg {
         width: 100%;
         justify-content: center;
         margin-top: 75%;
     }
 
-    .historia img{
+    .historia img {
         width: 70%;
         height: 85%;
     }
 
-    .shadowImg{
+    .shadowImg {
         width: 55%;
         height: 80%;
         display: none;
     }
 
-    .recetas{
+    .recetas {
         flex-direction: column-reverse;
     }
 
-    .recetasImg{
+    .recetasImg {
         width: 100%;
     }
 
-    .contRecetas{
+    .contRecetas {
         width: 100%;
 
-        p, a{
+        p,
+        a {
             font-size: 14px;
         }
-        
+
     }
-    
-    .verMasR{
+
+    .verMasR {
         margin-left: 0;
     }
 }
 
 /*RESERVAS*/
 
-form{
+form {
     display: flex;
     justify-content: center;
     width: 80%;
 }
 
-.form-column{
+.form-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 50%;
 }
 
-.second-inputs{
+.second-inputs {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-input, select{
+input,
+select {
     border-radius: 10px;
     padding: 2%;
     margin: 1%;
     border: 1px solid #EDE4C1;
 }
 
-input[type="number"]{
+input[type="number"] {
     width: 64%;
 }
 
-.btn{
+.btn {
     color: white;
     background-color: #2C2C2C;
     border: none;
-        padding: 3%;
+    padding: 3%;
 }
 
 
-.note{
+.note {
     border: 1px solid #EDE4C1;
     background-color: #fff;
     width: 35%;
@@ -603,23 +641,23 @@ input[type="number"]{
 
 }
 
-.note p{
-        margin-bottom: 20px;
+.note p {
+    margin-bottom: 20px;
 
 }
 
-.note label{
+.note label {
     padding-top: 80px;
 }
 
-.bigDiv{
+.bigDiv {
     display: flex;
     justify-content: center;
-    
+
     width: 100%;
 }
 
-.resh1{
+.resh1 {
     text-align: center;
     margin-top: 5%;
     font-size: 36px;
@@ -629,7 +667,7 @@ input[type="number"]{
 
 /* MENU */
 
-.banner{
+.banner {
     margin-top: 7%;
     padding: 3%;
     background-image: url('https://images.pexels.com/photos/34487028/pexels-photo-34487028.jpeg');
@@ -639,77 +677,197 @@ input[type="number"]{
     overflow: hidden;
 }
 
-.banner::before{
+.banner::before {
     content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.26),
-    rgba(0,0,0,0.7)
-  );
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0.26),
+            rgba(0, 0, 0, 0.7));
 }
 
-.banner *{
+.banner * {
     position: relative;
     z-index: 2;
 }
 
-.cat{
+.cat {
     background-color: #ffffff;
-    span{
+
+    span {
         font-size: 48px;
         margin-top: 15px;
         color: #dad0ac;
     }
-    p{
+
+    p {
         color: #dad0ac;
     }
+
     border: 1px solid #EDE4C1;
 }
 
-.desMenu{
-    padding:  0;
-}
-.carta{
-    padding-top: 8%;
-    padding-bottom:3%;
+.desMenu {
+    padding: 0;
 }
 
-.menuCard{
+.carta {
+    padding-top: 8%;
+    padding-bottom: 3%;
+}
+
+.menuCard {
     width: 195px !important;
     border: 1px solid #EDE4C1;
 }
 
-.menuCard img{
+.menuCard img {
     width: 100%;
     height: 120px;
     object-fit: cover;
 }
 
-.menuCard p{
+.menuCard p {
     font-size: 12px;
     margin: 5px 0;
 }
 
-.menuCard h6{
-    margin:0;
+.menuCard h6 {
+    margin: 0;
 }
 
-.guar{
+.guar {
     background-color: white;
     border: 1px solid #EDE4C1;
-    overflow: hidden; 
+    overflow: hidden;
     position: relative;
 }
-.guar p{
+
+.guar p {
     font-size: 12px;
     width: 100%;
 }
 
-.guar img{
+.guar img {
     width: 75%;
     position: absolute;
-    right: -80px; /* la empuja afuera */
+    right: -80px;
+    /* la empuja afuera */
     bottom: -90px;
+}
+
+/* RECETAS */
+
+.recMedia {
+    position: relative;
+
+}
+
+.recMedia img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    display: block;
+}
+
+.tiempo {
+    position: absolute;
+    bottom: -20px;
+    /* sobresale de la imagen */
+    left: 470px;
+    width: 115px;
+    height: 115px;
+    background: #18191d;
+    color: white;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2;
+}
+
+.num {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.min {
+    font-size: 14px;
+}
+
+.tiempo p {
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.verReceta {
+    width: 100%;
+}
+
+.rece p,
+.pill {
+    font-size: 14px;
+}
+
+.pill {
+    border: 1px solid #EDE4C1;
+    color: #cfc496;
+}
+
+.rece h5 {
+    font-family: "Roboto Slab", serif;
+}
+
+footer p {
+    font-size: 14px;
+    color: #ffffffb9;
+}
+
+/* MAPA */
+.mapouter {
+    position: relative;
+    text-align: right;
+     width: 220px;
+     height:150px;
+}
+
+.gmap_canvas iframe{
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    width:270px;
+    height:150px;
+}
+
+.gmap_canvas iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.mapouter a {
+    display: block;
+    font-size: 0.85em;
+    text-align: center;
+    padding: 5px 0;
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.gme-generated-link {
+    display: none !important;
+}
+
+.dropdown-menu{
+    min-width: 320px !important;
 }
