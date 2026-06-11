@@ -396,6 +396,11 @@ h2 {
         width: 100%;
         padding: 0 20px;
     }
+
+    .banner {
+    margin-top: 100px;
+}
+    
 }
 
 /* RESPONSIVE MOBILE */
@@ -603,7 +608,6 @@ select {
 /* MENU */
 
 .banner {
-    margin-top: 80px;
 
     padding: 3%;
     background-image: url('https://images.pexels.com/photos/34487028/pexels-photo-34487028.jpeg');
