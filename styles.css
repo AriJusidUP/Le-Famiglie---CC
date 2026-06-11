@@ -406,14 +406,7 @@ h2 {
 
     }
 
-    nav ul li:nth-child(4) {
-        display: none;
-    }
-
-    nav ul li:first-child {
-        display: none;
-    }
-
+    
     .material-symbols-outlined {
         display: block;
     }
