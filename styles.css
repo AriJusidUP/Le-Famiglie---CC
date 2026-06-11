@@ -379,6 +379,23 @@ h2 {
     .shadowImg {
         display: none;
     }
+
+    .recetas {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .recetasImg {
+        width: 60%;
+        max-width: 250px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .contRecetas {
+        width: 100%;
+        padding: 0 20px;
+    }
 }
 
 /* RESPONSIVE MOBILE */
@@ -515,6 +532,10 @@ h2 {
     .verMasR {
         margin-left: 0;
     }
+
+    .tiempo {
+        left: 250px;
+    }
 }
 
 /*RESERVAS*/
@@ -582,7 +603,8 @@ select {
 /* MENU */
 
 .banner {
-    margin-top: 7%;
+    margin-top: 80px;
+
     padding: 3%;
     background-image: url('https://images.pexels.com/photos/34487028/pexels-photo-34487028.jpeg');
     background-size: cover;
