@@ -381,24 +381,33 @@ h2 {
     }
 
     .recetas {
-        flex-direction: column;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
         text-align: center;
-    }
-
-    .recetasImg {
-        width: 60%;
-        max-width: 250px;
-        height: auto;
-        margin-bottom: 20px;
     }
 
     .contRecetas {
         width: 100%;
-        padding: 0 20px;
+        padding: 20px;
+    }
+
+    .recetasImg {
+        width: 70%;
+        max-width: 250px;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .verMasR {
+        justify-content: center;
     }
 
     .banner {
     margin-top: 100px;
+    padding-right: 3%;
+    padding-left: 3%;
+
 }
     
 }
