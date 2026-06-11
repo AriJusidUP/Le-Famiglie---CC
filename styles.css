@@ -394,8 +394,13 @@ h2 {
         margin-top:50%;
         padding-right: 3%;
         padding-left: 3%;
-        margin:3%
+        width: 90%;
 
+    }
+
+    .reservaPic{
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
 }
@@ -405,6 +410,7 @@ h2 {
     body {
         overflow-x: hidden;
     }
+    
 
     nav {
         padding-top: 3%;
@@ -538,6 +544,8 @@ h2 {
     .tiempo {
         left: 250px;
     }
+
+   
 }
 
 /*RESERVAS*/
@@ -757,7 +765,6 @@ select {
 .pill {
     border: 1px solid #d5c790;
     color: #6b5b1e;
-    background-color: #EDE4C1;
 
 }
 
